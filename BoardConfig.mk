@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/samsung/e53g
 
+# Inherit from msm8916-common
+-include device/samsung/msm8916-common/BoardConfigCommon.mk
+
 # Kernel
 TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_e53g_eur_defconfig

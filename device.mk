@@ -28,3 +28,6 @@ TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
+# Inherit from msm8916-common
+$(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
