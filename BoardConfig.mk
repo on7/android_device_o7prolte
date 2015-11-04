@@ -20,10 +20,9 @@ DEVICE_PATH := device/samsung/e53g
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 # Kernel
-TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_e53g_eur_defconfig
-TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/e53g
+TARGET_KERNEL_CONFIG := cyanogen_e53g_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
 # Partition Info
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
