@@ -62,7 +62,19 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
-$(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
+# Wifi
+PRODUCT_PACKAGES += \
+    hostapd_default.conf \
+    p2p_supplicant_overlay.conf \
+    wpa_supplicant_overlay.conf
+
+# Prima
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    $(LOCAL_PATH)/wifi/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/wifi/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+
+$(call inherit-product, frameworks/native/build/phone-hdpi-1024-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Inherit from msm8916-common
