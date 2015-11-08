@@ -70,3 +70,7 @@ persist.hwc.enable_vds=1
 
 # Disable Strict Mode
 persist.sys.strictmode.disable=true
+
+# Disable QMI logspam
+persist.data.qmi.adb_logmask=0
+
