@@ -83,6 +83,10 @@ on fs
 
     restorecon_recursive /persist
 
+    # Audio NXP
+    chmod 0666 /dev/i2c-1
+    chown system system /dev/i2c-1
+
     setprop ro.crypto.fuse_sdcard true
 
 on early-boot
