@@ -780,8 +780,9 @@ service perfd /system/bin/perfd
    group root
    disabled
 
-service thermal-engine /system/bin/thermal-engine
-   class main
+service thermal-engine /vendor/bin/thermal-engine
+   class core
+   seclabel u:r:thermal-engine:s0
    user root
    group root
 
