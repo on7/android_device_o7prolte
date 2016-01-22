@@ -22,5 +22,4 @@ $(call inherit-product, device/samsung/e53g/device.mk)
 PRODUCT_DEVICE := e53g
 PRODUCT_NAME := full_e53g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-E500H
 PRODUCT_MANUFACTURER := samsung

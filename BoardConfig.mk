@@ -19,6 +19,9 @@ DEVICE_PATH := device/samsung/e53g
 # Inherit from msm8916-common
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := e53g,e5ltexx
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/e53g
 TARGET_KERNEL_CONFIG := cyanogen_e53g_defconfig
@@ -79,3 +82,8 @@ TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+# Vendor Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/e53g/init/init_e53g.cpp
