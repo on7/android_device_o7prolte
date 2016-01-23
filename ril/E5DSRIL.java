@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * Qualcomm RIL for Samsung MSM8226 Single-sim devices
+ * Qualcomm RIL for Samsung Galaxy E5 Variants
  * {@hide}
  */
 public class E5DSRIL extends RIL {
