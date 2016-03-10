@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
     $(LOCAL_PATH)/audio/Tfa9895.cnt:system/etc/Tfa9895.cnt
 
@@ -49,17 +48,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
     $(LOCAL_PATH)/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     $(LOCAL_PATH)/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
-
-# Media configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
-
-# GPS config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sap.conf:system/etc/sap.conf \
-    $(LOCAL_PATH)/configs/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/configs/izat.conf:system/etc/izat.conf
 
 # ETC
 PRODUCT_PACKAGES += \
