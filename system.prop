@@ -38,10 +38,10 @@ av.offload.enable=false
 use.voice.path.for.pcm.voip=true
 
 # Fluence
-ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.fluencetype=true
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
+persist.audio.fluence.speaker=false
 
 # Media
 mm.enable.qcom_parser=3183219
