@@ -60,11 +60,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "e53gxx-user 5.1.1 LMY47X E500HXXU1BOK1 release-keys");
         property_set("ro.product.model", "SM-E500H");
         property_set("ro.product.device", "e53g");
-        property_set("ro.telephony.ril.config", "simactivation");
-        property_set("ro.multisim.set_audio_params", "true");
-        property_set("ro.multisim.simslotcount", "2");
-        property_set("ro.ril.telephony.mqanelements", "6");
-        property_set("persist.radio.multisim.config", "dsds");
         
     } else if (strstr(bootloader, "E500F")) {
         /* SM-E500F */
@@ -72,11 +67,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "e5ltexx-user 5.1.1 LMY47X E500FXXU1BOI1 release-keys");
         property_set("ro.product.model", "SM-E500F");
         property_set("ro.product.device", "e5lte");
-        property_set("ro.telephony.ril.config", "simactivation");
-        property_set("ro.multisim.set_audio_params", "true");
-        property_set("ro.multisim.simslotcount", "2");
-        property_set("ro.ril.telephony.mqanelements", "6");
-        property_set("persist.radio.multisim.config", "dsds");
 
     } else if (strstr(bootloader, "E500M")) {
         /* SM-E500M */
@@ -84,9 +74,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "e5ltexx-user 5.1.1 LMY47X E500FXXU1BOI1 release-keys");
         property_set("ro.product.model", "SM-E500M");
         property_set("ro.product.device", "e5lte");
-        property_set("ro.telephony.ril.config", "simactivation");
-        property_set("ro.ril.telephony.mqanelements", "6");
-        property_set("persist.radio.multisim.config", "none");
     }
 
     property_get("ro.product.device", device);
