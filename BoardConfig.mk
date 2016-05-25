@@ -24,7 +24,7 @@ TARGET_OTA_ASSERT_DEVICE := e53g,e5ltexx
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/e53g
-TARGET_KERNEL_CONFIG := cyanogen_e53g_defconfig
+TARGET_KERNEL_CONFIG :=  cyanogen_e53g_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
 # Partition Info
@@ -47,18 +47,19 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP
+RECOVERY_VARIANT := twrp
 DEVICE_RESOLUTION := 720x1280
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 TW_HAS_DOWNLOAD_MODE := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NEW_ION_HEAP := true
 TW_TARGET_USES_QCOM_BSP := true
-#TW_BRIGHTNESS_PATH := "/sys/devices/soc.0/1a00000.qcom,mdss_mdp/qcom,mdss_fb_primary.135/leds/lcd-backlight/brightness"
+TW_BRIGHTNESS_PATH := "/sys/devices/soc.0/1a00000.qcom\x2cmdss_mdp/qcom\x2cmdss_fb_primary.135/leds/lcd-backlight/brightness"
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/storage/extSdCard"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
-TW_MTP_DEVICE := /dev/usb_mtp_gadget
+TW_MTP_DEVICE := /dev/mtp_usb
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
