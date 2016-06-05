@@ -87,3 +87,6 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/e53g/init/init_e53g.cpp
+
+# Enable dex-preoptimization to speed up first boot sequence
+WITH_DEXPREOPT := true
