@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
 # libril_shim
 PRODUCT_PACKAGES += \
     libril_shim
+
+# Set default USB configuration
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
    
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
