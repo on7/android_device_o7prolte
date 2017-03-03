@@ -460,10 +460,6 @@ etc/Bluetooth_cal.acdb
 etc/General_cal.acdb
 etc/Global_cal.acdb
 
-etc/data/dsi_config.xml
-etc/data/netmgr_config.xml
-etc/data/qmi_config.xml
-
 usr/keylayout/Vendor_0461_Product_4dfc.kl
 usr/keylayout/Vendor_046d_Product_b32f.kl
 usr/keylayout/Vendor_046d_Product_b331.kl
