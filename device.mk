@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product-if-exists, vendor/samsung/e53g/e53g-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/o7prolte/o7prolte-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

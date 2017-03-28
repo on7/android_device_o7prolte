@@ -15,11 +15,11 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from e53g device
-$(call inherit-product, device/samsung/e53g/device.mk)
+# Inherit from o7prolte device
+$(call inherit-product, device/samsung/o7prolte/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := e53g
-PRODUCT_NAME := full_e53g
+PRODUCT_DEVICE := o7prolte
+PRODUCT_NAME := full_o7prolte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

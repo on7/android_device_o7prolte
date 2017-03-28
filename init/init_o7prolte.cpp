@@ -26,7 +26,8 @@
    OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
+ 
+ 
 #include <stdlib.h>
 
 #include "vendor_init.h"
@@ -50,28 +51,12 @@ void vendor_load_properties()
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "E500H")) {
-        /* SM-E500H */
-        property_set("ro.build.fingerprint", "samsung/e53gxx/e53g:5.1.1/LMY47X/E500HXXU1BOK1:user/release-keys");
-        property_set("ro.build.description", "e53gxx-user 5.1.1 LMY47X E500HXXU1BOK1 release-keys");
-        property_set("ro.product.model", "SM-E500H");
-        property_set("ro.product.device", "e53g");
-        
-    } else if (strstr(bootloader, "E500F")) {
-        /* SM-E500F */
-        property_set("ro.build.fingerprint", "samsung/e5ltexx/e5lte:5.1.1/LMY47X/E500FXXU1BOI1:user/release-keys");
-        property_set("ro.build.description", "e5ltexx-user 5.1.1 LMY47X E500FXXU1BOI1 release-keys");
-        property_set("ro.product.model", "SM-E500F");
-        property_set("ro.product.device", "e5lte");
-
-    } else if (strstr(bootloader, "E500M")) {
-        /* SM-E500M */
-        property_set("ro.build.fingerprint", "samsung/e5ltexx/e5lte:5.1.1/LMY47X/E500FXXU1BOI1:user/release-keys");
-        property_set("ro.build.description", "e5ltexx-user 5.1.1 LMY47X E500FXXU1BOI1 release-keys");
-        property_set("ro.product.model", "SM-E500M");
-        property_set("ro.product.device", "e5lte");
-    }
-
+    property_set("ro.build.fingerprint", "samsung/o7proltedd/o7prolte:6.0.1/MMB29M/G600FYDDU1BPL2:user/release-keys");
+    property_set("ro.build.description", "o7proltedd-user 6.0.1 MMB29M G600FYDDU1BPL2 release-keys");
+    
+    property_set("ro.product.model", "SM-G600FY");
+    property_set("ro.product.device", "o7prolte");
+   
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));
     INFO("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);

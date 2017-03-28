@@ -12,10 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-ifeq ($(TARGET_DEVICE),o7prolte)
+# Inherit device configuration
+$(call inherit-product, device/samsung/o7prolte/full_o7prolte.mk)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+# Release name
+PRODUCT_RELEASE_NAME := SM-G600FY
+PRODUCT_NAME := lineage_o7prolte
