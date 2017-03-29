@@ -450,8 +450,6 @@ lib/libaudio-ril.so
 lib/libsecril-client.so
 lib/libsec-ril-dsds.so
 vendor/lib/libril-qcril-hook-oem.so
-CSCVersion.txt
-SW_Configuration.xml
 tima_measurement_info
 
 etc/Hdmi_cal.acdb
@@ -462,6 +460,6 @@ etc/Bluetooth_cal.acdb
 etc/General_cal.acdb
 etc/Global_cal.acdb
 
-/etc/data/dsi_config.xml
-/etc/data/netmgr_config.xml
-/etc/data/qmi_config.xml
+etc/data/dsi_config.xml
+etc/data/netmgr_config.xml
+etc/data/qmi_config.xml
