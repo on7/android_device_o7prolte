@@ -475,7 +475,4 @@ usr/keylayout/Vendor_05ac_Product_0255.kl
 usr/keylayout/Vendor_0738_Product_5250.kl
 usr/keylayout/Vendor_0738_Product_5274.kl
 usr/keylayout/Vendor_2943_Product_0020.kl
-usr/keylayout/ft5x06_ts.kl
-usr/keylayout/synaptics_dsx.kl
-usr/keylayout/synaptics_rmi4_i2c.kl
-
+usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc
