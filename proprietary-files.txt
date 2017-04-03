@@ -442,9 +442,13 @@ lib/libsecnativefeature.so
 lib/libSamsungPostProcessConvertor.so
 lib/libsecaudioinfo.so
 
+bin/rild
+lib/libril.so
+lib/libsecril-client.so
 lib/libsec-ril.so
+lib/librilutils.so
 lib/libaudio-ril.so
-#lib/libsecril-client.so
+lib/libsecril-client.so
 lib/libsec-ril-dsds.so
 vendor/lib/libril-qcril-hook-oem.so
 tima_measurement_info
