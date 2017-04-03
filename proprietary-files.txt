@@ -442,12 +442,9 @@ lib/libsecnativefeature.so
 lib/libSamsungPostProcessConvertor.so
 lib/libsecaudioinfo.so
 
-bin/rild
 lib/libsec-ril.so
-lib/libril.so
-lib/librilutils.so
 lib/libaudio-ril.so
-lib/libsecril-client.so
+#lib/libsecril-client.so
 lib/libsec-ril-dsds.so
 vendor/lib/libril-qcril-hook-oem.so
 tima_measurement_info
@@ -459,20 +456,3 @@ etc/Speaker_cal.acdb
 etc/Bluetooth_cal.acdb
 etc/General_cal.acdb
 etc/Global_cal.acdb
-
-usr/keylayout/Vendor_0461_Product_4dfc.kl
-usr/keylayout/Vendor_046d_Product_b32f.kl
-usr/keylayout/Vendor_046d_Product_b331.kl
-usr/keylayout/Vendor_046d_Product_b332.kl
-usr/keylayout/Vendor_046d_Product_b343.kl
-usr/keylayout/Vendor_046d_Product_b344.kl
-usr/keylayout/Vendor_04e8_Product_7021.kl
-usr/keylayout/Vendor_04e8_Product_a000.kl
-usr/keylayout/Vendor_04e8_Product_a005.kl
-usr/keylayout/Vendor_04e8_Product_a006.kl
-usr/keylayout/Vendor_04e8_Product_a009.kl
-usr/keylayout/Vendor_05ac_Product_0255.kl
-usr/keylayout/Vendor_0738_Product_5250.kl
-usr/keylayout/Vendor_0738_Product_5274.kl
-usr/keylayout/Vendor_2943_Product_0020.kl
-usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc

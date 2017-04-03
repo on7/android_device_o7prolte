@@ -81,11 +81,11 @@ import java.util.Random;
 
 
 /**
- * RIL customization for Samsung E5DSRIL devices
+ * RIL customization for Samsung MSM8916RIL devices
  *
  * {@hide}
  */
-public class E5DSRIL extends RIL implements CommandsInterface {
+public class MSM8916RIL extends RIL implements CommandsInterface {
 
     private static final int RIL_REQUEST_DIAL_EMERGENCY = 10016;
     private static final int RIL_UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED = 1036;
@@ -99,7 +99,7 @@ public class E5DSRIL extends RIL implements CommandsInterface {
 
     private AudioManager mAudioManager;
 
-    public E5DSRIL(Context context, int networkMode, int cdmaSubscription,Integer instanceId) {
+    public MSM8916RIL(Context context, int networkMode, int cdmaSubscription,Integer instanceId) {
         super(context, networkMode, cdmaSubscription,  instanceId);
         mAudioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
         mQANElements = 6;

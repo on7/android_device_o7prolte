@@ -49,6 +49,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # E5 RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/o7prolte/ril/
+TARGET_RIL_VARIANT := caf
 
 # Audio
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
