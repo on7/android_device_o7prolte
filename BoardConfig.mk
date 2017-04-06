@@ -67,5 +67,6 @@ TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_o7prolte
 TARGET_LIBINIT_DEFINES_FILE := libinit_o7prolte
 
-# Enable dex-preoptimization to speed up first boot sequence
-WITH_DEXPREOPT := true
+# Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
