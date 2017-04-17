@@ -39,6 +39,12 @@ PRODUCT_COPY_FILES += \
     device/samsung/o7prolte/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
     device/samsung/o7prolte/configs/media/media_profiles.xml:system/etc/media_profiles.xml
 
+# For userdebug builds
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.debuggable=1
+ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
+
 # Inherit from msm8916-common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
