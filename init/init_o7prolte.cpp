@@ -45,7 +45,7 @@ void vendor_load_properties()
 
     std::string bootloader = property_get("ro.bootloader");
 
-        /* SM-J500G */
+        /* SM-G600FY */
         property_set("ro.build.fingerprint", "samsung/o7proltedd/o7prolte:6.0.1/MMB29M/G600FYDDU1BQA1:user/release-keys");
         property_set("ro.build.description", "o7proltedd-user 6.0.1 MMB29M G600FYDDU1BQA1 release-keys");
         property_set("ro.product.model", "SM-G600FY");
