@@ -26,6 +26,10 @@
 # Audio
 AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
 
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/o7prolte/configs/bluetooth
+
 # Radio
 SIM_COUNT := 2
 TARGET_GLOBAL_CFLAGS += -DANDROID_MULTI_SIM
@@ -48,8 +52,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_OTA_ASSERT_DEVICE := o7prolte,SM-G600FY,G600FY
 
 # Kernel
-TARGET_KERNEL_CONFIG := o7prolte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/o7prolte
+TARGET_KERNEL_VARIANT_CONFIG :=msm8916_sec_o7lte_swaopen_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8916-common
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
