@@ -14,15 +14,15 @@
 #
 
 # Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/j5ltexx/j5ltexx-vendor.mk)
+$(call inherit-product, vendor/samsung/o7prolte/o7prolte-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/j5ltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/o7prolte/overlay
 
-# Inherit from j5-common
-$(call inherit-product, device/samsung/j5-common/common.mk)
+# Inherit from msm8916-common
+$(call inherit-product, device/samsung/msm8916-common/common.mk)
 

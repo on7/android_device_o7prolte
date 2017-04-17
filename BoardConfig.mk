@@ -21,10 +21,7 @@
 #
 
 # Inherit from common j5
--include device/samsung/j5-common/BoardConfigCommon.mk
-
-# Inherit from the proprietary version
--include vendor/samsung/j5ltexx/BoardConfigVendor.mk
+-include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 # Audio
 AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
@@ -48,13 +45,13 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := j5lte,j5lteub,j5ltedx
+TARGET_OTA_ASSERT_DEVICE := o7prolte,SM-G600FY,G600FY
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_j5nlte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/j5lte
+TARGET_KERNEL_CONFIG := o7prolte_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/o7prolte
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_j5lte
-TARGET_RECOVERY_DEVICE_MODULES := libinit_j5lte
+TARGET_INIT_VENDOR_LIB := libinit_o7prolte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_o7prolte
