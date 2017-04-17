@@ -33,8 +33,6 @@ lib/libQjpeg.so
 lib/libquramagifencoder_L.so
 lib/libsec_devenc.so
 lib/libsxqk.so
-lib/lib_SoundBooster_ver610.so
-lib/libsamsungeffect.so
 lib/libsfextaac.so
 lib/libquramresize.so
 lib/libsecface.so
@@ -48,9 +46,6 @@ lib/libOmxVdecHevc.so
 lib/libsomxcore.so
 lib/libsnamrwb.so
 lib/libsomx264dsw.so
-lib/libtinyalsa.so
-lib/libsamsungSoundbooster_pgb.so
-lib/lib_DNSe_NRSS_ver226.so
 lib/libcordon.so
 lib/libcommon_time_client.so
 lib/libsomxmp3d.so
@@ -65,9 +60,7 @@ lib/libatparser.so
 lib/libsavsvc.so
 lib/lib_PreGainBooster_ver105.so
 lib/libdmcFaceEngine.so
-lib/libsamsungSoundbooster_ext.so
 lib/libsfextmp4f.so
-lib/lib_SamsungRec_V04013.so
 lib/libMcClient.so
 lib/libsomxamrd.so
 lib/libsecfips.so
@@ -80,7 +73,6 @@ lib/libQmageDecoder.so
 lib/libatomcore.so
 lib/libsomxadpcmd.so
 lib/libaudio-resampler.so
-lib/libsamsungpowersound.so
 lib/libsfextcp.so
 lib/libomission_avoidance.so
 lib/libsnaace.so
@@ -108,18 +100,11 @@ lib/libsecimaging.so
 lib/libterrier.so
 lib/libsec_ecryptfs.so
 lib/libmmcamera_wavelet_lib.so
-lib/libSamsungPkcs11Wrapper.so
-lib/libsoundalive.so
 lib/libsAMRNB.so
-lib/libsamsungearcare.so
 lib/libaf_algo_rear.so
 lib/libsomxmp4vdsw.so
-lib/lib_soundaliveresampler.so
 lib/libaec_algo_front.so
-lib/libsamsungRecord.so
-lib/libsamsungRecord_ns.so
 lib/libsavsff.so
-lib/lib_SoundAlive_SRC192_ver205.so
 lib/libsomxvp8d.so
 lib/libjpega.so
 lib/libsfextmkv.so
@@ -130,16 +115,13 @@ lib/libawb_algo_front_al.so
 lib/libaec_algo_rear.so
 lib/libvtstack.so
 lib/libgps.utils.so
-lib/lib_SoundAlive_play_plus_ver126a.so
 lib/libexifa.so
 lib/libbt-aptX-ARM-4.2.2.so
-lib/libSamsungMusic_v5.so
 lib/libAl_Awb.so
 lib/libmmcamera_cac2_lib_13M.so
 lib/libsomxnaace.so
 lib/hw/sensors.msm8916.so
 lib/hw/gps.default.so
-lib/hw/audio.primary.msm8916.so
 lib/hw/camera.msm8916.so
 lib/libawb_algo_rear_al.so
 lib/libcommonpawrapper.so
@@ -152,7 +134,6 @@ lib/libarcsoft_selfie_camera_lite.so
 lib/libgdmcprov.so
 lib/libphotoeditorEngine.so
 lib/libCryptionkey.so
-lib/lib_SoundAlive_3DPosition_ver107.so
 lib/libmmcamera2_stats_algorithm.so
 lib/libsecpkcs11_engine.so
 lib/librmnetctl.so
@@ -162,17 +143,14 @@ lib/libface.so
 lib/libsfextcmn.so
 lib/libsecmediarecorder_jni.so
 lib/libseccamera_jni.so
-lib/libSamsungPostProcess.so
 lib/libvtmanager.so
 lib/libsomxaace.so
 lib/libnvaccessor_fb.so
 lib/libsxqk_skia.so
 lib/libmysound.so
 lib/libsAMRWB.so
-lib/libsamsungVoipResampler.so
 lib/libsavsmeta.so
 lib/libsavsac.so
-lib/libSamsungPreProcess.so
 lib/libstagefright_hdcp.so
 lib/libquramimagecodec.so
 
@@ -223,7 +201,6 @@ vendor/etc/RIDL/RIDL.db
 vendor/etc/RIDL/qdss.cfg
 vendor/media/PFFprec_600.emd
 vendor/media/LMspeed_508.emd
-vendor/bin/audioflacapp
 vendor/bin/thermal-engine
 vendor/bin/sampleauthdaemon
 vendor/bin/perfd
@@ -256,7 +233,6 @@ vendor/lib/libchromatix_s5k5e3yx_wide_vt.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmiipstreammmihttp.so
 vendor/lib/libvoice-svc.so
-vendor/lib/libnative_audio_latency_jni.so
 vendor/lib/libnetmgr.so
 vendor/lib/libmmcamera_dw_dw9806b_eeprom.so
 vendor/lib/libqmi_cci.so
@@ -290,7 +266,6 @@ vendor/lib/libqmi_csi.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libconfigdb.so
 vendor/lib/libchromatix_s5k3l2xx_vt_hd.so
-vendor/lib/libaudioalsa.so
 vendor/lib/libOpenCL.so
 vendor/lib/libmmosal.so
 vendor/lib/libvcel.so
@@ -320,7 +295,6 @@ vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libchromatix_s5k5e3yx_wide_video.so
 vendor/lib/libmmcamera_pdaf.so
-vendor/lib/liblistensoundmodel2.so
 vendor/lib/libflp.so
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
@@ -422,11 +396,7 @@ vendor/lib/libqmi.so
 vendor/lib/libqmi_client_helper.so
 vendor/lib/libSecureUILib.so
 vendor/lib/libmmcamera_imglib.so
-lib/lib_Samsung_AudioZoom_v102.so
-lib/libsamsungRecord_zoom.so
 lib/libsecnativefeature.so
-lib/libSamsungPostProcessConvertor.so
-lib/libsecaudioinfo.so
 
 bin/rild
 lib/libril.so
