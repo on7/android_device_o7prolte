@@ -52,6 +52,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 
 # Shims for Camera
 PRODUCT_PACKAGES += libshim_camera
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/rootdir/init.shims.rc:root/init.shims.rc
 
 # Inherit from msm8916-common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
