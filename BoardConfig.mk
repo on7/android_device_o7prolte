@@ -20,12 +20,14 @@
 # definition file).
 #
 
-# Inherit from common j5
+# Inherit from common msm8916-common
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
+
+# Inherit from the proprietary version
+-include vendor/samsung/o7prolte/BoardConfigVendor.mk
 
 # Audio
 AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
-
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/o7prolte/configs/bluetooth
