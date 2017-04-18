@@ -40,12 +40,12 @@ PRODUCT_COPY_FILES += \
     device/samsung/o7prolte/configs/media/media_profiles.xml:system/etc/media_profiles.xml
 
 # Ril Qmi Config
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/data/dsi_config.xml:system/etc/data/dsi_config.xml
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml 
+PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/dsi_config.xml:system/etc/data/dsi_config.xml
+PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
+PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml 
 
 # Keylayouts
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
+PRODUCT_COPY_FILES += device/samsung/o7prolte/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
@@ -55,7 +55,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 
 # Shims for Camera
 PRODUCT_PACKAGES += libshim_camera
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/rootdir/init.shims.rc:root/init.shims.rc
+PRODUCT_COPY_FILES += device/samsung/o7prolte/rootdir/init.shims.rc:root/init.shims.rc
 
 # Inherit from msm8916-common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
