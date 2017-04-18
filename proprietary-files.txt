@@ -66,13 +66,11 @@ lib/libsomxamrd.so
 lib/libsecfips.so
 lib/libloc_core.so
 lib/libshdace.so
-lib/libaudioroute.so
 lib/libloc_api_v02.so
 lib/libfactoryutil.so
 lib/libQmageDecoder.so
 lib/libatomcore.so
 lib/libsomxadpcmd.so
-lib/libaudio-resampler.so
 lib/libsfextcp.so
 lib/libomission_avoidance.so
 lib/libsnaace.so
