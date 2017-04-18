@@ -44,6 +44,9 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/data/dsi_config.xml:system/etc/data/
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml 
 
+# Keylayouts
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
+
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
