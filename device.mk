@@ -44,9 +44,6 @@ PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/dsi_config.xml:system
 PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
 PRODUCT_COPY_FILES += device/samsung/o7prolte/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml 
 
-# Keylayouts
-PRODUCT_COPY_FILES += device/samsung/o7prolte/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
-
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
