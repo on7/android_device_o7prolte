@@ -50,6 +50,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.debuggable=1
 ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 
+# Prebuilt kl keymaps
+PRODUCT_COPY_FILES += \
+    device/samsung/o7prolte/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
+
 # Shims for Camera
 PRODUCT_PACKAGES += libshim_camera
 PRODUCT_COPY_FILES += device/samsung/o7prolte/rootdir/init.shims.rc:root/init.shims.rc

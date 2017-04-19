@@ -69,3 +69,6 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8916-common
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_o7prolte
 TARGET_RECOVERY_DEVICE_MODULES := libinit_o7prolte
+
+# Keys
+PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/Generic.kl:system/usr/keylayout/Generic.kl , $(PRODUCT_COPY_FILES))
