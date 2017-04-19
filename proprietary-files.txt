@@ -26,6 +26,7 @@ bin/btnvtool
 bin/ssr_setup
 bin/mm-qcamera-daemon
 bin/usbhub_init
+bin/rmnetcli
 app/TimeService/TimeService.apk
 lib/libarccamera.so
 lib/libQjpeg.so
@@ -133,6 +134,7 @@ lib/libphotoeditorEngine.so
 lib/libCryptionkey.so
 lib/libmmcamera2_stats_algorithm.so
 lib/libsecpkcs11_engine.so
+lib/librmnetctl.so
 lib/libbt-iopdb.so
 lib/libsfextflac.so
 lib/libface.so
