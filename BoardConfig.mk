@@ -48,11 +48,11 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5016350720
 
 # Enable dex-preoptimization to speed up the first boot sequence
 # of an SDK AVD. Note that this operation only works on Linux for now
-ifeq ($(HOST_OS),linux)
-  ifeq ($(WITH_DEXPREOPT),)
-    WITH_DEXPREOPT := true
-  endif
-endif
+#ifeq ($(HOST_OS),linux)
+#  ifeq ($(WITH_DEXPREOPT),)
+#    WITH_DEXPREOPT := true
+#  endif
+#endif
 
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
