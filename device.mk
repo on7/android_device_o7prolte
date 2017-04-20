@@ -58,6 +58,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += libshim_camera
 PRODUCT_COPY_FILES += device/samsung/o7prolte/rootdir/init.shims.rc:root/init.shims.rc
 
+#Shims for libwvm
+PRODUCT_PACKAGES += libshim_wvm
+
 # Inherit from msm8916-common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
