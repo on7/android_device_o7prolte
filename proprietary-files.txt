@@ -24,6 +24,10 @@ bin/time_daemon
 bin/radish
 bin/btnvtool
 bin/ssr_setup
+bin/imsqmidaemon
+bin/imsdatadaemon
+bin/ims_rtp_daemon
+bin/imscmservice
 bin/mm-qcamera-daemon
 bin/usbhub_init
 bin/rmnetcli
