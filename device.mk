@@ -26,13 +26,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/o7prolte/overlay
 # Audio
 PRODUCT_COPY_FILES += \
     device/samsung/o7prolte/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/samsung/o7prolte/configs/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-    device/samsung/o7prolte/configs/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
 	
 # Media Profiles
 PRODUCT_COPY_FILES += \
