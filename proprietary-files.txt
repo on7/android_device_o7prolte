@@ -467,3 +467,4 @@ lib/lib_Samsung_AudioZoom_v102.so
 lib/libsamsungRecord_zoom.so
 lib/libSamsungPostProcessConvertor.so
 lib/libsecaudioinfo.so
+lib/libaudioroute.so
