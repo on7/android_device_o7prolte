@@ -425,6 +425,8 @@ vendor/lib/lib-imsrcscmservice.so
 vendor/lib/lib-imsrcscm.so
 vendor/lib/lib-imsqimf.so
 
+# Acdb stuff
+
 etc/Handset_cal.acdb
 etc/Global_cal.acdb
 etc/Bluetooth_cal.acdb
@@ -432,3 +434,36 @@ etc/General_cal.acdb
 etc/Hdmi_cal.acdb
 etc/Speaker_cal.acdb
 etc/Headset_cal.acdb
+
+# Audio
+
+lib/lib_SoundBooster_ver610.so
+lib/libsamsungeffect.so
+lib/libtinyalsa.so
+lib/libsamsungSoundbooster_pgb.so
+lib/lib_DNSe_NRSS_ver226.so
+lib/libsamsungSoundbooster_ext.so
+lib/lib_SamsungRec_V04013.so
+lib/libsamsungpowersound.so
+lib/libSamsungPkcs11Wrapper.so
+lib/libsoundalive.so
+lib/libsamsungearcare.so
+lib/lib_soundaliveresampler.so
+lib/libsamsungRecord.so
+lib/libsamsungRecord_ns.so
+lib/lib_SoundAlive_SRC192_ver205.so
+lib/lib_SoundAlive_play_plus_ver126a.so
+lib/libSamsungMusic_v5.so
+lib/hw/audio.primary.msm8916.so
+lib/lib_SoundAlive_3DPosition_ver107.so
+lib/libSamsungPostProcess.so
+lib/libsamsungVoipResampler.so
+lib/libSamsungPreProcess.so
+vendor/bin/audioflacapp
+vendor/lib/libnative_audio_latency_jni.so
+vendor/lib/libaudioalsa.so
+vendor/lib/liblistensoundmodel2.so
+lib/lib_Samsung_AudioZoom_v102.so
+lib/libsamsungRecord_zoom.so
+lib/libSamsungPostProcessConvertor.so
+lib/libsecaudioinfo.so
