@@ -60,6 +60,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 
 PRODUCT_PACKAGES += libshim_camera
 
+# Prebuilt kl keymaps
+PRODUCT_COPY_FILES += \
+    device/samsung/o7prolte/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
+
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 

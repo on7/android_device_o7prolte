@@ -66,3 +66,6 @@ TARGET_LIBINIT_DEFINES_FILE := libinit_o7prolte
 
 # Enable dex-preoptimization to speed up first boot sequence
 WITH_DEXPREOPT := true
+
+# Keys
+PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/Generic.kl:system/usr/keylayout/Generic.kl , $(PRODUCT_COPY_FILES))
