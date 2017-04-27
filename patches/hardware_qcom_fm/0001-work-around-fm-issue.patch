@@ -1,0 +1,97 @@
+From 9aa0fe201c7146b8da708cd775076342eb475849 Mon Sep 17 00:00:00 2001
+From: grace5921 <androidlover5842@gmail.com>
+Date: Mon, 24 Apr 2017 15:47:47 +0530
+Subject: [PATCH] work around fm issue
+
+Change-Id: I3014f62c6a60188bb891b7b1f32397cef3b21950
+---
+ fmapp2/src/com/caf/fmradio/FMRadioService.java | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+
+diff --git a/fmapp2/src/com/caf/fmradio/FMRadioService.java b/fmapp2/src/com/caf/fmradio/FMRadioService.java
+index 887c228..a704091 100644
+--- a/fmapp2/src/com/caf/fmradio/FMRadioService.java
++++ b/fmapp2/src/com/caf/fmradio/FMRadioService.java
+@@ -1066,14 +1066,25 @@ public class FMRadioService extends Service
+                mSpeakerPhoneOn = true;
+                Log.d(LOGTAG, "Audio source set it as speaker");
+                AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_SPEAKER);
++               mAudioManager.setParameters("fm_mode=on");
++               mAudioManager.setParameters("fm_radio_volume=on");
++               mAudioManager.setParameters("FMRadioVol=0.1496235728");
++               mAudioManager.setMode(AudioManager.MODE_IN_CALL);
++               mAudioManager.setSpeakerphoneOn(true);
+            } else {
+                Log.d(LOGTAG, "Audio source set it as headset");
+                AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_NONE);
++               mAudioManager.setParameters("fm_mode=on");
++               mAudioManager.setParameters("fm_radio_volume=on");
++               mAudioManager.setParameters("FMRadioVol=0.1496235728");
++               mAudioManager.setMode(AudioManager.MODE_IN_CALL);
++               mAudioManager.setSpeakerphoneOn(false);
+            }
+        } else {
+                Log.d(LOGTAG, "A2DP is connected, set audio source to A2DP HS");
+                AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_SPEAKER);
+                mSpeakerPhoneOn = true;
++               mAudioManager.setSpeakerphoneOn(true);
+        }
+ 
+        mPlaybackInProgress = true;
+@@ -1090,6 +1101,8 @@ public class FMRadioService extends Service
+        Log.d(LOGTAG, "In stopFM");
+        configureAudioDataPath(false);
+        mPlaybackInProgress = false;
++	   mAudioManager.setParameters("fm_radio_mute=1");
++       mAudioManager.setParameters("fm_mode=off");
+        try {
+            if ((mServiceInUse) && (mCallbacks != null))
+                mCallbacks.onFmAudioPathStopped();
+@@ -1539,6 +1552,7 @@ public class FMRadioService extends Service
+       public void run() {
+          Log.v(LOGTAG, "Disabling Speaker");
+          AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_NONE);
++		 mAudioManager.setSpeakerphoneOn(false);
+       }
+    };
+ 
+@@ -2257,6 +2271,7 @@ public class FMRadioService extends Service
+       if ( mSpeakerPhoneOn) {
+           mSpeakerPhoneOn = false;
+           AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_NONE);
++		  mAudioManager.setSpeakerphoneOn(false);
+       }
+    }
+ 
+@@ -2376,10 +2391,12 @@ public class FMRadioService extends Service
+             } else {
+                 Log.d(LOGTAG, "A2DP is not connected, force none");
+                 AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_NONE);
++				mAudioManager.setSpeakerphoneOn(false);
+             }
+        } else if (speakerOn == true) {
+            Log.d(LOGTAG, "enabling speaker");
+            AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_SPEAKER);
++		   mAudioManager.setSpeakerphoneOn(true);
+        }
+ 
+        Log.d(LOGTAG, "speakerOn completed:" + speakerOn);
+@@ -2480,6 +2497,7 @@ public class FMRadioService extends Service
+       {
+          mMuted = true;
+          audioManager.setParameters("fm_mute=1");
++		 audioManager.setParameters("fm_radio_mute=1");
+          if (mAudioTrack != null)
+              mAudioTrack.setVolume(0.0f);
+       }
+@@ -2502,6 +2520,7 @@ public class FMRadioService extends Service
+       {
+          mMuted = false;
+          audioManager.setParameters("fm_mute=0");
++		 audioManager.setParameters("fm_radio_mute=0");
+          if (mAudioTrack != null)
+              mAudioTrack.setVolume(1.0f);
+          if (mResumeAfterCall)
+-- 
+2.7.4
+

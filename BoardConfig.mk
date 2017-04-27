@@ -20,8 +20,8 @@ DEVICE_PATH := device/samsung/o7prolte
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/o7prolte
-TARGET_KERNEL_CONFIG :=  o7prolte_defconfig
+TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
+TARGET_KERNEL_VARIANT_CONFIG :=msm8916_sec_o7lte_swaopen_defconfig
 
 # Partition Info
 BOARD_BOOTIMAGE_PARTITION_SIZE      := 13631488
@@ -45,10 +45,7 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
-# QCom RIL class
-BOARD_RIL_CLASS := ../../../device/samsung/o7prolte/ril/
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/configs/bluetooth
 
 # Audio
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true

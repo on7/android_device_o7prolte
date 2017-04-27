@@ -30,7 +30,7 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_COPY_FILES += external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio configuration
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
 
 # Wifi
 PRODUCT_PACKAGES += hostapd_default.conf
@@ -41,14 +41,6 @@ PRODUCT_PACKAGES += wpa_supplicant_overlay.conf
 PRODUCT_PACKAGES += AntHalService
 PRODUCT_PACKAGES += com.dsi.ant.antradio_library
 PRODUCT_PACKAGES += libantradio
-
-# Prebuilt kl keymaps
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/Synaptics_RMI4_TouchPad_Sensor.idc:usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/ft5x06_ts.kl:system/usr/keylayout/ft5x06_ts.kl
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
 
 # Ril
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/data/dsi_config.xml:system/etc/data/dsi_config.xml
@@ -64,7 +56,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.debuggable=1
 ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 
-# For Camera
+# Shims for Camera
 
 PRODUCT_PACKAGES += libshim_camera
 
