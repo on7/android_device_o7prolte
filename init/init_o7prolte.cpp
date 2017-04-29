@@ -35,9 +35,6 @@
 void init_dsds() {
     property_set("ro.multisim.simslotcount", "2");
     property_set("persist.radio.multisim.config", "dsds");
-	 property_set("persist.radio.lte_vrte_ltd", "1");
-	 property_set("telephony.lteOnCdmaDevice", "0");
-	 property_set("ro.telephony.default_network", default_network);
 }
 
 void vendor_load_properties()
