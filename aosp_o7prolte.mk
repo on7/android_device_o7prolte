@@ -23,7 +23,7 @@ TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
 #Inherit from common
-$(call inherit-product, device/samsung/o7-common/lineage.mk)
+$(call inherit-product, device/samsung/o7-common/aosp_o7prolte.mk)
 
 $(call inherit-product, device/samsung/o7prolte/device.mk)
 
